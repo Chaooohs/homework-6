@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=skill+Sans:wght@500;600&display=swap");
+
+:root {
+  font-size: 10px;
+
+  --c-black: #000;
+  --c-black-gray: #212529;
+  --c-dark: #1c1c1c;
+  --c-light: #fff;
+  --c-gray: #d5d5d5;
+  --c-gray-light: #f5fbf2;
+  --c-gray-dark: #7b7b7b;
+  --c-yellow: #ffb742;
+}
+
+body {
+  margin: 0;
+}
+
+/* #region common */
+.hire_me {
+  width: 12.1rem;
+  height: 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: var(--c-black-gray);
+  background-color: var(--c-yellow);
+  border-radius: 5rem;
+}
+.ellip {
+  width: 14.8rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: var(--c-yellow);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5rem;
+}
+.font_h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  text-transform: capitalize;
+  color: var(--c-light);
+  margin: 0 0 3rem 0;
+}
+.font_p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: var(--c-gray);
+}
+.font_customersay {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  color: var(--c-black);
+}
+/* #endregion */
+
+.main {
+  max-width: 1400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: var(--c-black-gray);
+}
+
+/* #region header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 5rem 0;
+}
+
+.header_icon {
+  width: 9rem;
+  height: 6.5rem;
+}
+.nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > a {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--c-light);
+}
+
+.nav > a :hover {
+  color: var(--c-yellow);
+}
+/* #endregion */
+
+/* #region my */
+.my_intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10.8rem;
+  margin-bottom: 13.6rem;
+}
+.my_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 5.1rem;
+  text-transform: capitalize;
+  color: var(--c-light);
+  margin: 0;
+}
+.my_name > span {
+  color: var(--c-yellow);
+  border-bottom: 0.2rem solid var(--c-yellow);
+}
+.my_profession {
+  line-height: 9.1rem;
+  margin: 0;
+}
+.my_to_do {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 5.1rem;
+  text-transform: capitalize;
+  color: var(--c-light);
+  margin-top: 2.6rem;
+}
+.my_avatar {
+  width: 21rem;
+  height: 22rem;
+  margin-top: 2.2rem;
+}
+.my_experience {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.my_experience_card {
+  width: 32%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: rgba(56, 62, 69, 0.44);
+  border-radius: 1rem;
+}
+.my_experience_card:hover {
+  background: linear-gradient(
+    94.3deg,
+    #ffb742 0%,
+    rgba(255, 123, 66, 0.76) 99.33%
+  );
+}
+.my_experience_card:hover .my_experience_card_title,
+.my_experience_card:hover .my_experience_card_subtitle {
+  color: var(--c-black-gray);
+}
+.my_experience_card_icon {
+  width: 17%;
+}
+.my_experience_card_icon > img {
+  width: 100%;
+}
+.my_experience_card_title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--c-yellow);
+}
+.my_experience_card_subtitle {
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  color: var(--c-light);
+}
+.my_experience_card_arrow {
+  width: 1.8%;
+}
+.my_experience_card_arrow > img {
+  width: 100%;
+}
+/* #endregion */
+
+/* #region about me */
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 22.1rem auto 0;
+}
+.about_left {
+  width: 50%;
+}
+.about_left_foto {
+  width: 100%;
+}
+.about_right {
+  width: 50%;
+}
+/* .about_right_title {
+  line-height: ;
+} */
+.about_right_text {
+  width: 94%;
+  height: 17.6rem;
+  margin: 0 0 5.4rem 0;
+  overflow: hidden;
+}
+/* #endregion */
+
+/* #region skill */
+.skill {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.8rem auto 0;
+}
+.skill_left {
+  width: 50%;
+}
+.skill_text {
+  margin: 0 0 6.4rem 0;
+}
+.skill_right {
+  width: 42%;
+  height: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill_right > div {
+  width: 15%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #383e45;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.skill_right > div > img {
+  width: 50%;
+}
+.skill_right > div:hover {
+  background: rgba(255, 183, 66, 0.5);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+/* #endregion */
+
+/* #region work */
+.work {
+  width: 90%;
+  margin: 13.6rem auto 0;
+}
+.work_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work_list > ul {
+  width: 67%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.work_list > ul > li > a {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: var(--c-light);
+  padding: 0.5rem 2rem;
+}
+.work_list > ul > li > a:hover {
+  color: var(--c-black-gray);
+  background: var(--c-yellow);
+  border-radius: 3px;
+  padding: 0.5rem 2rem;
+}
+.work_preview {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4.6rem;
+}
+.work_preview div {
+  width: 31%;
+  height: 81rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.work_preview > div > img {
+  width: 100%;
+}
+/* #endregion */
+
+/* #region comment */
+.comment {
+  width: 90%;
+  margin: 13.6rem auto 0;
+  padding-bottom: 25.3rem;
+}
+.comment_title {
+  font-family: 'Roboto';
+font-weight: 700;
+font-size: 3.9rem;
+line-height: 4.6rem;
+text-transform: capitalize;
+color: var(--c-light);
+margin: 0;
+}
+.comment_view {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 9rem;
+}
+.comment_view_card {
+  width: 30%;
+  height: 45.4rem;
+  background: var(--c-light);
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+  padding: 5rem 5.2rem 4.8rem 3.2rem;
+}
+.comment_view_card_star {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 54%;
+}
+.comment_view_card_star > img {
+  width: 1.4rem;
+}
+.comment_view_card_text {
+  height: 20.8rem;
+  overflow: auto;
+  margin-top: 2.1rem;
+  margin-bottom: 3.6rem;
+}
+.comment_view_card_customer {
+  display: flex;
+  align-items: center;
+}
+.comment_view_card_customer_logo {
+  width: 30%;
+}
+.comment_view_card_customer_init {
+  margin-left: 2.4rem;
+}
+.comment_view_card_customer_init_name {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  color: var(--c-black);
+}
+.comment_view_card_customer_init_prof {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  color: var(--c-black);
+}
+/* #endregion */
+
+/* #region footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--c-dark);
+  padding: 14.8rem 0 9.3rem 0;
+}
+.footer_name > h4 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 100%;
+  color: var(--c-yellow);
+  margin: 0 0 3rem 0;
+}
+.footer_name > p {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #d4d4d4;
+}
+.footer_list > div {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  color: var(--c-gray-light);
+  margin-bottom: 1.3rem;
+}
+.footer_list > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer_list > ul > li > a {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3.6rem;
+  text-decoration: none;
+  color: var(--c-gray-dark);
+}
+.footer_letter_title {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 2.15rem;
+  line-height: 3.2rem;
+  color: var(--c-gray-light);
+  margin: 0 0 0.8rem 0;
+}
+.footer_litter_text {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3.6rem;
+  color: var(--c-gray-dark);
+}
+/* #endregion */
